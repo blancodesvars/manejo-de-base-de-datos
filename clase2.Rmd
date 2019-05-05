@@ -9,19 +9,19 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Utilizamos la función *file.choose()* para obtener la ruta del archivo a utilizar.
+Utilizamos la función *file.choose()* para obtener la ruta del archivo a utilizar.A continuación trabajaremos con la librería **dplyr**.
 
 ```{r, message=FALSE}
 library(dplyr)
 ```
 
-kjsdncvjdsvjdsbcijsabcjidsac
+Como nuestro archivo se encuentra en formato **.csv** utilizamos la función **read.csv()** y aplicamos el argumento **stringsAsFactors =FALSE** en orden de evitar que el software reconozca automáticamente como factores algunas  variables. 
 
 ```{r }
 base <- read.csv("C:\\manejo-de-base-de-datos\\Iowa_Liquor_Sales.csv", stringsAsFactors =FALSE)
 ```
 
-AXBABXKJSxc jksC
+**names()** es la función que devuelve el nombre de las columnas de mi base de datos.
 
 ```{r }
 names(base)
