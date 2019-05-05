@@ -11,18 +11,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 
-Utilizamos la funcion *file.choose()* para obtener la ruta ddel archivo a utilizar 
+Utilizamos la funcion *file.choose()* para obtener la ruta del archivo a utilizar. A continuacio  trabajaremos con la libreria **dplyr**
 
 ```{r,message=FALSE}
 library(dplyr)
 ```
+
+Como nuestro archivo se encuentra em formato **.cvs** utilizamos la funcion **read.cvs()** y aplicamos el argumento **stringsAsFactors= FALSE** en orden de evitar que el software reconozca automaticamente las variables.
 
 ```{r}
 
 base <- read.csv("C:\\manejo-de-base-de-datos\\Iowa_Liquor_Sales.csv", stringsAsFactors= FALSE) 
 ```
 
-Names es la funcion que devuelve
+**names()** es la funcion que devuelve el nombre de las columnas de mi base de datos
+
 ```{r}
 names(base)
 ```
