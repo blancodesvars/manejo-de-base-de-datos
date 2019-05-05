@@ -8,3 +8,21 @@ output: pdf_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+Utilizamos la función *file.choose()* para obtener la ruta del archivo a utilizar.
+
+```{r, message=FALSE}
+library(dplyr)
+```
+
+kjsdncvjdsvjdsbcijsabcjidsac
+
+```{r }
+base <- read.csv("C:\\manejo-de-base-de-datos\\Iowa_Liquor_Sales.csv", stringsAsFactors =FALSE)
+```
+
+AXBABXKJSxc jksC
+
+```{r }
+names(base)
+```
