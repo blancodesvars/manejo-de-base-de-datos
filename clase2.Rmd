@@ -1,0 +1,10 @@
+---
+title: "Clase2"
+author: "Martín Blanco"
+date: "5/5/2019"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
