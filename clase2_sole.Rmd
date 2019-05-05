@@ -15,6 +15,10 @@ Utilizamos la funcion *file.choose()* para obtener la ruta del archivo a utiliza
 
 ```{r,message=FALSE}
 library(dplyr)
+
+install.packages('tidyverse', dependencies=TRUE, type="source")
+
+library(tidyvers)
 ```
 
 Como nuestro archivo se encuentra em formato **.cvs** utilizamos la funcion **read.cvs()** y aplicamos el argumento **stringsAsFactors= FALSE** en orden de evitar que el software reconozca automaticamente las variables.
@@ -27,7 +31,9 @@ base <- read.csv("C:\\manejo-de-base-de-datos\\Iowa_Liquor_Sales.csv", stringsAs
 **names()** es la funcion que devuelve el nombre de las columnas de mi base de datos
 
 ```{r}
-names(base)
+names(base) 
+str(base)
+Nueva.base <- base %>% select("country")
 ```
 
 
